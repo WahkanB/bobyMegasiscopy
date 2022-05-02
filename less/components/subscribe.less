@@ -1,0 +1,128 @@
+@import 'var.less';
+@import 'common.less';
+
+.container-subscribe {
+    width: 100%;
+    background-color: #F3F3F3;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+    .subscribe-details {
+        padding-left: 15px;
+        padding-right: 1px;
+
+        @media only screen and (min-width:@tablet) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media only screen and (min-width:@desktop) {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+
+
+
+        h2 {
+            font-size: 33px;
+            font-weight: bolder;
+            text-align: center;
+            padding-bottom: 20px;
+
+            @media only screen and (min-width:@tablet) {
+                font-size: 44px;
+            }
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .input-form {
+            font-size: 18px;
+            border-bottom: 2px solid @black;
+
+            @media only screen and (min-width:@mobile-lg) {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            @media only screen and (min-width:@tablet) {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            @media only screen and (min-width:@desktop) {
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+
+
+            input {
+
+                margin-bottom: 5px;
+                border: 0;
+                background: none;
+                color: @black;
+                line-height: inherit;
+                border-radius: 0;
+
+            }
+        }
+
+        .send-btn {
+            display: block;
+            color: @white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c70d0d;
+            padding: 15px 35px;
+            text-align: center;
+
+            @media only screen and (min-width:@mobile-lg) {
+                display: inline;
+                position: absolute;
+                margin-top: -60px;
+                margin-left: auto;
+                margin-right: 20px;
+                right: 0;
+
+            }
+            @media only screen and (min-width:@tablet) {
+               
+                margin-right: 100px;
+            }
+            @media only screen and (min-width:@desktop) {
+                
+                margin-right:160px;
+            }
+
+            a {
+                color: @white;
+                font-size: 20px;
+            }
+        }
+
+        .pera-text {
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                color: #646464;
+
+                @media only screen and (min-width:@tablet) {
+                    margin-left: 80px;
+                    margin-right: 80px;
+                }
+
+            }
+        }
+
+
+    }
+
+}

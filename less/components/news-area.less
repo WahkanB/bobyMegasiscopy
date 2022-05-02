@@ -1,0 +1,686 @@
+@import 'var.less';
+@import 'common.less';
+
+.nav-menu {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4c4c4c;
+    font-size: 16px;
+    padding: 6px;
+    margin-top: -15px;
+    position: relative;
+
+
+    @media only screen and (min-width:@desktop) {
+        display: none;
+    }
+
+    .menu-text {
+        display: inline-block;
+        align-self: flex-end;
+        background-color: #222;
+        padding: 7px 12px;
+        margin: 5px;
+        color: @white;
+        text-transform: uppercase;
+        border-radius: 4px;
+
+
+        span {
+            font-weight: bold;
+
+        }
+    }
+
+}
+
+
+
+.news-area {
+    margin-top: -20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+
+    @media only screen and (min-width:@tablet) {
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    @media only screen and (min-width:@desktop) {
+        margin: 0px 0px 21px;
+        display: flex;
+
+    }
+
+    @media only screen and (min-width:@desktop-lg) {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    .container-top-news {
+        @media only screen and (min-width:@desktop) {
+            display: flex;
+            margin-right: 20px;
+
+        }
+
+        .news-top-image img {
+            width: 100%;
+            height: auto;
+            background-position: center;
+
+            @media only screen and (min-width:@desktop) {
+                width: 100%;
+                height: 240px;
+
+            }
+
+            @media only screen and (min-width:@desktop-lg) {
+                width: 700px;
+                height: 300px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.main-container-news {
+    display: flex;
+    flex-direction: column;
+
+    .news-area-image {
+        @media only screen and (min-width:@mobile-lg) {
+            display: flex;
+
+        }
+    }
+
+    .news-area-image img {
+        width: 100%;
+        height: 320px;
+        vertical-align: middle;
+        margin-bottom: 21px;
+        margin-right: 20px;
+
+        @media only screen and (min-width:@mobile-lg) {
+            width: 310px;
+            height: 210px;
+        }
+
+        @media only screen and (min-width:@desktop) {
+            width: 320px;
+            height: 220px;
+
+        }
+
+    }
+}
+
+
+
+
+.news-area-text {
+    display: block;
+    max-width: 350px;
+
+    @media only screen and (min-width:@desktop) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    span {
+        color: @span-red;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 15px;
+
+        @media only screen and (min-width:@desktop-lg) {
+            font-size: 13px;
+        }
+
+    }
+
+    .main-a-text {
+        color: @black;
+        font-size: 15px;
+        font-weight: 700;
+        margin-right: 0px;
+        transition: 0.7s;
+
+        @media only screen and (min-width:@desktop-lg) {
+            font-size: 13px;
+        }
+    }
+
+    .main-p-text {
+        color: @black;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        @media only screen and (min-width:@desktop-lg) {
+            font-size: 13px;
+        }
+
+
+
+        &:hover {
+            color: @span-red;
+        }
+
+    }
+
+}
+
+
+
+
+.main-news-area-text {
+    span {
+        color: @span-red;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 15px;
+
+    }
+
+
+    a {
+        color: @black;
+        font-size: 15px;
+        font-weight: 700;
+        margin-right: 0px;
+        transition: 0.7s;
+
+        p {
+            color: @black;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+
+
+            &:hover {
+                color: @span-red;
+            }
+
+        }
+
+        @media only screen and (min-width:@tablet) {
+            font-size: 45px;
+        }
+
+        @media only screen and (min-width:@desktop) {
+            font-size: 30px;
+        }
+
+        &:hover {
+            color: @span-red;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+.second-news-area {
+    display: block;
+
+    .second-container-news {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @media only screen and (min-width:@tablet) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media only screen and (min-width:@desktop-lg) {
+            padding-left: 88px;
+            padding-right: 88px;
+        }
+
+        @media only screen and (min-width:@tablet) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: calc((100% / 2) - 10px);
+
+        }
+
+       
+
+        .second-news-area-image {
+            display: block;
+
+            @media only screen and (min-width:@tablet) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex-basis: calc((100% / 2) - 10px);
+
+            }
+
+            @media only screen and (min-width:@desktop) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex-basis: calc((100% / 3) - 10px);
+
+            }
+
+            a {
+                img {
+                    width: 100%;
+                    height: 320px;
+                    vertical-align: middle;
+                    margin-bottom: 21px;
+                    margin-right: 20px;
+
+                    @media only screen and (min-width:@tablet) {
+                        width: 320px;
+                        height: 220px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
+
+.second-news-area-text a {
+    color: @black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 0px;
+    transition: 0.7s;
+
+    @media only screen and (min-width:@tablet) {
+        font-size: 20px;
+    }
+
+    &:hover {
+        color: @span-red;
+    }
+
+}
+
+p {
+    color: @black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    &:hover {
+        color: @span-red;
+    }
+
+}
+
+
+
+
+.third-science-update {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    display: block;
+
+    @media only screen and (min-width:@tablet) {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    @media only screen and (min-width:@desktop-lg) {
+        padding-left: 88px;
+        padding-right: 88px;
+       
+
+    }
+
+
+    .third-news-area-image {
+      
+        
+        
+       
+        @media only screen and (min-width:@tablet) {
+            flex-basis: calc((100% / 2) - 20px);
+            max-width: 320px;
+           
+           
+
+        }
+
+        @media only screen and (min-width:@desktop-lg) {
+            flex-basis: calc((100% / 4) - 10px);
+            margin: 0;
+        }
+
+
+        img {
+
+            width: 100%;
+            height: 320px;
+            vertical-align: middle;
+            margin-bottom: 21px;
+            display: flex;
+
+
+            @media only screen and (min-width:@tablet) {
+                width: 320px;
+                height: 220px;
+            }
+
+            @media only screen and (min-width:@desktop) {
+                width: 250px;
+                height: 200px;
+
+
+
+
+            }
+
+
+
+        }
+    }
+
+}
+
+
+
+
+.news-theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 5px solid @black;
+
+    @media only screen and (min-width:@tablet) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @media only screen and (min-width:@desktop-lg) {
+        margin-left: 88px;
+        margin-right: 88px;
+    }
+
+    h2 {
+        color: @black;
+        font-size: 30px;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: @black;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+
+
+
+}
+
+
+
+
+.sciene-update {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 5px solid @black;
+    border-top: 2px;
+
+    @media only screen and (min-width:@tablet) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media only screen and (min-width:@desktop-lg) {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    a {
+        color: @black;
+        font-size: 15px;
+        font-weight: 700;
+        margin-right: 0px;
+        transition: 0.7s;
+
+
+        &:hover {
+            color: @span-red;
+        }
+    }
+
+    @media only screen and (min-width:@desktop) {
+        margin: 0px 0px 21px;
+    }
+
+
+}
+
+
+
+.news-area-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px 10px;
+
+
+    h2 {
+        color: @white;
+        font-size: 30px;
+        display: inline-block;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+
+    }
+
+    a {
+        color: @white;
+        font-weight: 700;
+        font-size: 15px;
+        text-decoration: underline;
+
+    }
+}
+
+.video-news {
+    width: 100%;
+    display: block;
+    background-color: black;
+    padding-bottom: 15px;
+
+
+    @media only screen and (min-width:@desktop) {
+        margin: 0px 0px 21px;
+        display: flex;
+    }
+
+
+
+    .container-top-video img {
+        display: @black;
+        width: 100%;
+        height: auto;
+
+
+
+        @media only screen and (min-width:@desktop) {
+            display: flex;
+            width: 100%;
+            height: auto;
+
+
+
+        }
+    }
+
+    .container-top-video {
+        display: block;
+        background-color: black;
+        padding: 0 10px;
+    }
+
+
+    .container-all-video img {
+        width: 100%;
+        height: auto;
+        display: block;
+
+
+
+        @media only screen and (min-width:@tablet) {
+            width: 250px;
+            height: 180px;
+
+        }
+
+        @media only screen and (min-width:@tablet) {
+            display: flex;
+            margin-right: 20px;
+
+
+        }
+
+    }
+
+    .container-area-video {
+        display: block;
+        width: 100%;
+        background-color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+
+        @media only screen and (min-width:@desktop) {
+            margin: 0px 0px 21px;
+            display: flex;
+
+        }
+
+
+    }
+
+    .news-area-text-video {
+        color: @white;
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        display: block;
+
+
+
+        h2 a {
+            color: @white;
+            font-size: 22px;
+            font-weight: 700;
+            display: block;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-right: 0px;
+
+            &:hover {
+                color: @span-red;
+            }
+
+
+
+        }
+
+        p {
+            color: @white;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            &:hover {
+                color: @span-red;
+            }
+
+        }
+
+        .fa-clock {
+
+            color: #ffffff80;
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+
+        span {
+            color: #ffffff80;
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+
+    }
+
+}
+
+
+
+
+
+.news-area-ads {
+    padding: 40px 15px;
+
+    @media only screen and (min-width:@tablet) {
+        margin: auto;
+        width: 80%;
+    }
+
+    @media only screen and (min-width:@desktop) {
+        margin: auto;
+        width: 70%;
+    }
+
+    img {
+        width: 100%;
+
+        @media only screen and (min-width:@desktop) {
+            width: 870px;
+            height: 180px;
+
+        }
+    }
+}
